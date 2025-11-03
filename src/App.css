@@ -100,3 +100,15 @@ button:hover {
   letter-spacing: 0.1rem;
   font-size: 1.7rem;
 }
+
+@media screen and (max-width: 980px) {
+  .section-form form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-post ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
