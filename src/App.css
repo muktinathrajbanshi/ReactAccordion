@@ -87,3 +87,16 @@ button:hover {
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
 }
+
+.accordion-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-question {
+  font-weight: bold;
+  font-family: "Syne";
+  letter-spacing: 0.1rem;
+  font-size: 1.7rem;
+}
