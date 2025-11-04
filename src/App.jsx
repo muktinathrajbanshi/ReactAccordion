@@ -1,12 +1,13 @@
 import React from 'react';
 import "./App.css";
+import { Accordion } from './components/Accordion';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello accordion!</h1>
+      <Accordion />
     </div>
-  )
-}
+  );
+};
 
 export default App;
