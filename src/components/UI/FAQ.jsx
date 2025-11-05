@@ -3,10 +3,10 @@ export const FAQ = ({ curData }) => {
     return (
         <li>
         <div className="accordion-grid">
-        <p>{curElem.question}</p>
+        <p>{question}</p>
         <button>Show</button>
         </div>
-        <p>{curElem.answer}</p>
+        <p>{answer}</p>
        </li> 
     );
 };
