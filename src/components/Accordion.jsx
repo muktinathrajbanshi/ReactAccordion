@@ -7,6 +7,10 @@ export const Accordion = () => {
     useEffect(() => {
         setData(faq);
     }, []);
+
+    // console.log(data);
+    
+
     return (
         <>
             <h1>The Accordion</h1>
@@ -19,6 +23,7 @@ export const Accordion = () => {
                                     <p>{curElem.question}</p>
                                     <button>Show</button>
                                 </div>
+                                <p>{curElem.answer}</p>
                             </li>
                         );
                     })
