@@ -4,6 +4,8 @@ import { FAQ } from "./UI/FAQ";
 
 export const Accordion = () => {
     const [data, setData] = useState([]);
+    const [activeId, setActiveId] = useState(false);
+
 
     useEffect(() => {
         setData(faq);
@@ -15,7 +17,7 @@ export const Accordion = () => {
             <ul className="section-accordion">
                 {
                     data.map((curElem) => {
-                        return <FAQ key={curElem.id} curData={curElem} />;
+                        return <FAQ key={curElem.id} curData={curElem} isActive = {activeId === curElem.id} />;
                     })
                 }
             </ul>
