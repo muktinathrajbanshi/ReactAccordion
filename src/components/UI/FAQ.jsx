@@ -1,4 +1,5 @@
-export const FAQ = () => {
+export const FAQ = ({ curData }) => {
+    const { question, answer } = curData;
     return (
         <li>
         <div className="accordion-grid">
@@ -6,6 +7,6 @@ export const FAQ = () => {
         <button>Show</button>
         </div>
         <p>{curElem.answer}</p>
-    </li> 
+       </li> 
     );
 };

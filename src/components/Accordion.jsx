@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import faq from "../API/faq.json";
+import { FAQ } from "./UI/FAQ";
 
 export const Accordion = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         setData(faq);
-    }, []);
-
-    // console.log(data);
-    
+    }, []);    
 
     return (
         <>
