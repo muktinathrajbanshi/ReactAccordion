@@ -17,15 +17,7 @@ export const Accordion = () => {
             <ul className="section-accordion">
                 {
                     data.map((curElem) => {
-                        return (
-                            <li key={curElem.id}>
-                                <div className="accordion-grid">
-                                    <p>{curElem.question}</p>
-                                    <button>Show</button>
-                                </div>
-                                <p>{curElem.answer}</p>
-                            </li>
-                        );
+                        return <FAQ key={curElem.id} curData={curElem} />;
                     })
                 }
             </ul>
