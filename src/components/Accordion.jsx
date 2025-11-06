@@ -11,6 +11,11 @@ export const Accordion = () => {
         setData(faq);
     }, []);    
 
+    // handleButton 
+    const handleButton = (id) => {
+        setActiveId((prevId) => (prevId === id ? false : id))
+    }
+
     return (
         <>
             <h1>The Accordion</h1>
