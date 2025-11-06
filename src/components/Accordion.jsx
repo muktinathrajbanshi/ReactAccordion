@@ -26,7 +26,7 @@ export const Accordion = () => {
                          <FAQ 
                         key={curElem.id} 
                         curData={curElem} 
-                        isActive={true} 
+                        isActive={activeId === curElem.id} 
                         onToggle={() => handleButton(curElem.id)}    
                         />
                         );
