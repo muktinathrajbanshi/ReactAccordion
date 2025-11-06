@@ -17,7 +17,12 @@ export const Accordion = () => {
             <ul className="section-accordion">
                 {
                     data.map((curElem) => {
-                        return <FAQ key={curElem.id} curData={curElem} isActive = {activeId === curElem.id} />;
+                        return <FAQ 
+                        key={curElem.id} 
+                        curData={curElem} 
+                        isActive = {activeId === curElem.id} 
+                        onToggle={() => handleButton(curElem.id)}    
+                        />;
                     })
                 }
             </ul>
