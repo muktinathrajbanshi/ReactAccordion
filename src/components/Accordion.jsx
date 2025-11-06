@@ -13,8 +13,8 @@ export const Accordion = () => {
 
     // handleButton 
     const handleButton = (id) => {
-        setActiveId((prevId) => (prevId === id ? false : id))
-    }
+        setActiveId((prevId) => (prevId === id ? false : id));
+    };
 
     return (
         <>
@@ -22,12 +22,14 @@ export const Accordion = () => {
             <ul className="section-accordion">
                 {
                     data.map((curElem) => {
-                        return <FAQ 
+                        return (
+                         <FAQ 
                         key={curElem.id} 
                         curData={curElem} 
-                        isActive = {activeId === curElem.id} 
+                        isActive={true} 
                         onToggle={() => handleButton(curElem.id)}    
-                        />;
+                        />
+                        );
                     })
                 }
             </ul>

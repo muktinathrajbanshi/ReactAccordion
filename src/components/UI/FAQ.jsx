@@ -1,15 +1,17 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export const FAQ = ({ curData, onToggle }) => {
+export const FAQ = ({ curData, onToggle, isActive }) => {
     const { question, answer } = curData;
 
     return (
         <li>
         <div className="accordion-grid">
         <p>{question}</p>
-        <button onClick={onToggle} className={isActive? "active-btn" : ""}>{ activeId ? "Close" : "Show" }</button>
+        <button onClick={onToggle} className={isActive? "active-btn" : ""}>
+        {isActive ? "Close" : "Show" }
+        </button>
         </div>
-        <p>{ activeId && answer}</p>
+        <p>{ isActive && answer}</p>
        </li> 
     );
 };
